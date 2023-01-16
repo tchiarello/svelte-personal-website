@@ -3,6 +3,9 @@
 	<meta name="description" content="Projects" />
 </svelte:head>
 
-<div class="text-column">
+<div class="content-column">
 	<h1>Projects</h1>
+	<p>My projects along the years</p>
+
+	<div />
 </div>

@@ -37,7 +37,7 @@
 		position: fixed;
 		width: 100%;
 		background-color: var(--color-bg);
-		border-bottom: 1px solid var(--color-theme-2);
+		border-bottom: 1px solid var(--color-theme-1);
 		padding: 24px;
 
 		nav {
@@ -57,7 +57,7 @@
 
 		.link {
 			position: relative;
-			color: var(--color-theme-1);
+			color: var(--color-theme-2);
 			font-weight: 700;
 			font-size: 0.8rem;
 			text-transform: uppercase;

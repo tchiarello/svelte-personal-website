@@ -6,8 +6,11 @@
 	footer {
 		display: flex;
 		justify-content: center;
-		background-color: var(--color-theme-2);
-		color: var(--color-bg);
+		background-color: var(--color-bg);
+		color: var(--color-theme-5);
+		border-top: 1px solid var(--color-theme-3);
 		padding: 24px;
+		width: 70%;
+		margin: 0 auto;
 	}
 </style>
