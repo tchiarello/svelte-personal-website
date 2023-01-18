@@ -1,7 +1,7 @@
 <script>
-	import Footer from './Footer.svelte';
-	import Header from './Header.svelte';
-	import './styles.css';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import './global.scss';
 </script>
 
 <div class="app">
@@ -14,8 +14,9 @@
 	<Footer />
 </div>
 
-<style>
+<style lang="scss">
 	.app {
+		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
@@ -29,6 +30,5 @@
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
-		box-sizing: border-box;
 	}
 </style>
