@@ -4,6 +4,7 @@ export interface ProjectsList {
 	id: number;
 	title: string;
 	href: string;
+	preview: string;
 	description: string;
-	video?: Asset;
+	media: Asset;
 }
