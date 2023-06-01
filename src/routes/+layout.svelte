@@ -1,11 +1,11 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
-	import Header from '$lib/components/Header.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import './global.scss';
 </script>
 
 <div class="app">
-	<Header />
+	<Navbar />
 
 	<main>
 		<slot />
@@ -26,9 +26,8 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		justify-content: space-between;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
+		margin-top: 126px;
 	}
 </style>

@@ -11,6 +11,10 @@
 		border-top: 1px solid var(--color-theme-3);
 		padding: 24px;
 		width: 70%;
-		margin: 0 auto;
+		margin: 40px auto 0;
+
+		@media (max-width: 540px) {
+			width: 100%;
+		}
 	}
 </style>
