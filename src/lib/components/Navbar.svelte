@@ -8,10 +8,10 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a class="link" href="/">Home</a>
+				<a class="link home" href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
-				<a class="link" href="/portfolio">Portfolio</a>
+				<a class="link portfolio" href="/portfolio">Portfolio</a>
 			</li>
 		</ul>
 		<ul>
@@ -33,8 +33,8 @@
 
 <style lang="scss">
 	header {
-		box-sizing: border-box;
 		position: fixed;
+		z-index: 20;
 		width: 100%;
 		background-color: var(--color-bg);
 		border-bottom: 1px solid var(--color-theme-1);
@@ -57,28 +57,38 @@
 
 		.link {
 			position: relative;
-			color: var(--color-theme-2);
+			color: var(--color-theme-5);
 			font-weight: 700;
 			font-size: 0.8rem;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			transition: all 0.8s;
+			transition: 0.4s ease-out;
 		}
 
-		.link:hover {
+		.home:hover {
+			color: var(--color-theme-3);
+		}
+
+		.portfolio:hover {
 			color: var(--color-theme-2);
 		}
 
 		.link::before {
 			content: '';
-			background-color: var(--color-theme-2);
-			transition: 0.4s ease-out;
-			width: 0%;
-			height: 2px;
-
 			position: absolute;
 			left: 0;
 			bottom: -3px;
+			width: 0%;
+			height: 2px;
+			transition: 0.4s ease-out;
+		}
+
+		.home::before {
+			background-color: var(--color-theme-3);
+		}
+
+		.portfolio::before {
+			background-color: var(--color-theme-2);
 		}
 
 		.link:hover::before {
