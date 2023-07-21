@@ -1,33 +1,25 @@
 <script>
 	import { page } from '$app/stores';
-	import github from '$lib/images/github.svg';
-	import linkedin from '$lib/images/linkedin.svg';
+	import Button from '$lib/components/Button/index.svelte';
 </script>
 
 <header>
 	<nav>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a class="link home" href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
-				<a class="link portfolio" href="/portfolio">Portfolio</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="https://github.com/tchiarello" target="_blank" rel="noreferrer">
-					<img src={github} alt="GitHub icon" />
-				</a>
-			</li>
-			<li>
-				<a
-					href="https://www.linkedin.com/in/tatiane-chiarello/?locale=en_US"
-					target="_blank"
-					rel="noreferrer"><img src={linkedin} alt="LinkedIn icon" /></a
-				>
-			</li>
-		</ul>
+		<div>
+			<!-- <Logo /> -->
+		</div>
+
+		<div>
+			<ul>
+				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+					<a class="link home" href="/">Home</a>
+				</li>
+				<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
+					<a class="link portfolio" href="/portfolio">Portfolio</a>
+				</li>
+			</ul>
+			<Button label="Resume" type="link" />
+		</div>
 	</nav>
 </header>
 

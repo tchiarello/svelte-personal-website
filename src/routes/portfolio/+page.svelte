@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from '$lib/components/Card.svelte';
+	import Card from '$lib/components/Card/index.svelte';
 	import type { ProjectsList } from 'src/types/contentfulTypes';
 
 	export let data: { projects: ProjectsList[] };
