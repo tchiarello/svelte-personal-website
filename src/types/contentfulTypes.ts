@@ -8,3 +8,8 @@ export interface ProjectsList {
 	description: string;
 	media: Asset;
 }
+
+export interface Profile {
+	altText: string;
+	profileImage: Asset;
+}
