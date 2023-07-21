@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@contentful/rich-text-html-renderer": "^16.0.2",
+		"clsx": "^1.2.1",
 		"contentful": "^9.2.17"
 	}
 }
